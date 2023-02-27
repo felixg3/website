@@ -18,9 +18,10 @@
     <style>
         @media (prefers-color-scheme: dark){
         	    body {color:#fff;background:#000}
-        	    a:link {color:#9cf}
+                hr {background-color:#fff}
+        	    a:link {color:#fff}
         	    a:hover, a:visited:hover {color:#cef}
-        	    a:visited {color:#c9f}
+        	    a:visited {color:#fff}
         	}
             @media print{
         			body{
@@ -33,71 +34,97 @@
         	    padding:0 .62em;
         	    font:1.2em/1.62 sans-serif;
         	}
-        	h1,h3 {
+        	h1 {
         	    line-height:1.2;
         	}
-
-        	h2 {
-                font:1.2em/1.62 sans-serif;
+            hr {
+                height: 5px;
+                border-width:0;
+            }
+        	h2,h3 {
+                font:1.5em;
+                font-family: monospace;
         	}
+
             .left {
                     text-align: left;
                     }
             .right {
                     text-align: right;
                     }
+            li a {
+                text-decoration: none;
+                color:#000;
+            }
     </style>
 </head>
 
 <body>
-    <article>
         <header>
+    <ul style="list-style-type:none;margin:0;padding:0;">
+        <li style="float:left">
+          <a href="/">/home/felix</a>
+        </li>
+          <li style="float:right">
+            <a href="/page-2.html">~/about</a>
+          </li>
+      </ul>
+    </header>
+  <br>
+  <hr>
+<article>
+    <div>
             <h1>Fe·lix र Gieß·mann, <i>n.</i> <a href=https://www.giordano-bruno-stiftung.de/inhalt/das-humanistische-glaubensbekenntnis>ﷺ</a>
                 <br> [ˈfeːliːks ˈɡiːsˌman]</h1>
-            <h2>This is a website made with the plain text editor <a href="https://helix-editor.com"><code>helix</code></a> and loads on all your devices within milliseconds. You're welcome.</h2>
+            <h2>$ &lt;/etc/motd</h2>
+            <p>This is a website made with the plain text editor <a href="https://helix-editor.com"><code>helix</code></a> and loads on all your devices within milliseconds. You're welcome.</p>
             <p>Recently (Dec 2022) someone thought the following would be some sort of SQL error. <em>It's a joke.</em> You may replace the variables manually to <em>fix</em> this website. </p>
-            <code>env INDIVIDUAL="Felix", HOMETOWN="Wuppertal", SPAWN_LOC="51°16'28.6"N 7°08'31.6"E", 'SELF_ASSESSED_INTELLIGENCE' of type 'Integer' cannot be set to null or empty value.</code>
-        </header>
-        <h3>As of 2023, <code>$INDIVIDUAL</code> is a graduate student of <em>Political Science, Development Economics and Geography in South Asia</em> at the Ruprecht Karl University of Heidelberg</h3>
-        <p>Accomplishments since his involuntary introduction to this world at <code>$SPAWN_LOC</code> in 1994:</p>
+            <p><code>$ env INDIVIDUAL="Felix" \ HOMETOWN="Wuppertal" \ SPAWN_LOC="51°16'28.6"N 7°08'31.6"E" </code>
+            <code>'SELF_ASSESSED_INTELLIGENCE' of type 'Integer' cannot be set to null or empty value.</code></p>
+    </div>
+   
+    <div>
+        <h2>$ /usr/bin/whoami</h2>
+        <p>As of 2023, <code>$INDIVIDUAL</code> is a graduate student of <em>Political Science, Development Economics and Geography in South Asia</em> at the Ruprecht&nbsp;Karl University&nbsp;of&nbsp;Heidelberg</p>
+        <p>Accomplishments since his involuntary, yet very appreciated introduction to this world at <code>$SPAWN_LOC</code> in 1994:</p>
         <ul>
-            <li>Graduated in <em>Political Science</em> and <em>Economics</em> at the University of <code>$HOMETOWN</code> in 2019.
+            <li>&hellip; graduated in <em>Political Science</em> and <em>Economics</em> at the University of <code>$HOMETOWN</code> in 2019.
             </li>
-            <li>He worked at <a href="https://www.r-tec.net/home.html">r-tec Cyber Security</a> for roughly three-and-a-half years.
+            <li>&hellip; worked at <a href="https://www.r-tec.net/home.html">r-tec Cyber Security</a> for roughly three-and-a-half years.
             </li>
-            <li>He lived in Bangalore between 2016 and 2017.
+            <li>&hellip; lived in Bangalore between 2016 and 2017.
             </li>
-            <li>He studied at Jawaharlal Nehru University in <code>$CAPITAL_CITY_OF_INDIA.</code>
+            <li>&hellip; studied at Jawaharlal Nehru University in New Delhi.
             </li>
-            <li>He studied at Georg August University of Göttingen from 2020-2022 but left to be in the same city as &hellip;
+            <li>&hellip; studied at Georg August University of Göttingen from 2020-2022 but left to be in the same city as &hellip;
             </li>
-            <li> &hellip; his wife Varsha who is an awesome person, aspiring Conference Interpreter and LaTeX-Nerd.
+            <li>&hellip; his wife Varsha who is an awesome person, aspiring Conference Interpreter and LaTeX-Nerd.
             </li>
         </ul>
         <p>He can be reached via email at <code>$INDIVIDUAL</code>{at}giessmann.net or via <a rel="me" href="https://ruhr.social/@felixg3">Mastodon</a>. My public key fingerprint is
             <a href="https://keyoxide.org/hkp/6D9C0E29898F38E69D80139C036EDCD6BCFE650B" title="OpenPGP-Key">
                 <code>6D9C 0E29 898F 38E6 9D80 139C 036E DCD6 BCFE 650B</code></a>
         </p>
-        <h3 id="research">My research interests.</h3>
+        <h2 id="research">$ &lt;~/research.md</h2>
         <ul>
             <li>Hindutva and comparative political science</li>
             <li>remote sensing for urban development assessment: human-environment interactions and development studies &hellip;</li>
             <li>&hellip; and, thematically connected: applied statistics (methods of empirical social science, econometrics) in political science and development economics</li>
             <li>state-sponsored internet-trolls <sup><small>plz sponsor me</small></sup></li>
         </ul>
-        <h3 id="personal">My personal interests.</h3>
+        <h2 id="personal">$ &lt;~/personal.md</h2>
         <ul>
             <li>GNU/Linux (especially openSUSE, Fedora, Debian) and <s>ThinkPads</s>, currently not because of €$&#8377;&mdash;using a Yoga Slim 7 ProX 82TL (which I cordially call a th0nkp4d) and a MBA 2020 M1 for work</li>
             <li>Indian cuisine: My favourites are Dosa (South Indian savoury, crispy pancake with accompanying condiments), Thayir Sadam (curd rice), Laal Maas (Rajasthani red mutton curry)</li>
             <li>Hosting guests from abroad. So far: Israel 🇮🇷 , Iran 🇮🇱 , Russia 🇺🇦 , Turkey 🇦🇲 , India 🇵🇰 , Austria 🇩🇪 , France 🏳️ , Slovakia 🇨🇿 , Italy 🇸🇴 </li>
         </ul>
-        <h3 id="quotes">My favourite quotes, music, and so on.</h3>
+        <h2 id="quotes">$ &lt;~/misc.md</h2>
         <p>“Particularly difficult to play: Piano concertos by Rachmaninov. Particularly hard to rinse: vanilla sauce residue on the whisk.”&mdash;Max Goldt.</p>
         <p>I like microhouse, a somewhat obscure subgenre of electronic music with artists such as DJ Koze, Pantha Du Prince, Isol&eacute;e et cetera.</p>
-        <h3 id="formalities">Formal stuff.</h3>
+        <h2 id="formalities">$ &lt;/usr/share/doc/website/README</h2>
         <p>This website doesn't have an Impressum, as I do not process any data. Come at me with an Abmahnung, my dear lawyer. </p>
         <p>There is no tracking, no cookies except on the delivery end of a <a href="https://www.cloudflare.com/cloudflare-customer-dpa/">CDN (Content Delivery Network) that may use cookies to provide security&trade;</a></p>
-
+    </div>
     </article>
     <p class="right"><a href="page-2.html">next page</a>
     </p>
